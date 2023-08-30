@@ -1,0 +1,8 @@
+# Calculate the number of grapevines that will fit in a row
+import math
+# Define the terms
+r = float(input('What is the length of the row, in feet: '))
+e = float(input('How much space is used by an endpoint assembly, in feet: '))
+s = float(input('How much space is in between the vines, in feet: '))
+formula_in_feet = ( v := (r- (2 * e) / s ) )
+print(formula_in_feet, 'ft.')

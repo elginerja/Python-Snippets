@@ -1,0 +1,8 @@
+# Display the amount of money that will be in the account after a certian amount of year
+# Define the terms
+P = float(input('How much money was origninaly in your account, in dollars: '))
+r = float(input('What is the anual interest rate, in percent: '))
+n = float(input('How many times is the interest compounded, per year: '))
+t = float(input('How many years will the account be left: '))
+A = ((P * (1 + (r / n ))) ** n * t)
+print('$',A, 'Will be in the account at the end. ') 

@@ -1,0 +1,13 @@
+# Create a distance travled calculator
+" distance = speed (miles_per_hour) * time (hour) "
+# Calculate distance in each scenario
+# Calculate the distance it will travel in 6 hours
+distance1 = 70 * 6
+# Calculate the distance it will travel in 10 hours
+distance2 = 70 * 10
+# Calculate the distance it will travel in 15 hours
+distance3 = 70 * 15
+# Show the different distances
+print("The distance the car will travel in 6 hours is", distance1)
+print("The distance the car will travel in 10 hours is", distance2)
+print("The distance the car will travel in 15 hours is", distance3)
