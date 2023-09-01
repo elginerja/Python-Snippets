@@ -10,4 +10,3 @@ print('Your area is', area_of_circle)
 circumference = float(2 * math.pi * r)
 # Tell the user what the circumference of their circle is
 print('Your circumference is', circumference)
-print("add new line")
