@@ -1,0 +1,25 @@
+income = int(input('What is your yearly income?: '))
+print ()
+if income <= 11_000:
+    tax = 0.1  * (income)
+    bracket = '10%' 
+elif income <= 44_725:
+    tax = 0.12 * (income - 11000) + 1_100
+    bracket = '12%'
+elif income <= 95_375:
+    tax = 0.22 * (income - 44726) + 5_147
+    bracket = '22%'
+elif income <= 182_100:
+    tax = 0.24 * (income - 95375) + 16_290
+    bracket = '24%'
+elif income <= 231_250:
+    tax = 0.32 * (income - 182_100) + 37_104
+    bracket = '32%'
+elif income <= 578_125:
+    tax = 0.35 * (income - 231_250) + 52_832
+    bracket = '35%'
+else: 
+    tax = 174_238.25 + 0.37 * (income - 578_125)
+    bracket = '37%'
+print ('An income of', format(income, 'd') , 'places you in the', bracket, 'income bracket.')
+print ('The US Federal tax on an income of', income, 'is' , tax)
