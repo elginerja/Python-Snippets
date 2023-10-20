@@ -1,3 +1,12 @@
+# File: <Chapter 7 problem 4>
+# Description: <average, total, list of numbers>
+# Assignment Name and Number: chapter 7 problem 4
+#
+# Name: <John Jack Elginer>
+# GitHub: <johnjack>
+#
+# On my honor, <Jack Elginer>, this programming assignment is my own work
+# and I have not provided this code to any other student.
 list_of_numbers = []
 for num in range(20):
     while True:

@@ -1,3 +1,13 @@
+# File: <Chapter 7 problem 7>
+# Description: <dmv numbers >
+# Assignment Name and Number: chapter 7 problem 7
+#
+# Name: <John Jack Elginer>
+# GitHub: <johnjack>
+#
+# On my honor, <Jack Elginer>, this programming assignment is my own work
+# and I have not provided this code to any other student.
+# i know this doesn't work but I am trying it anyway
 student_answers = ['A', 'C', 'B', 'A', 'D', 'D', 'C', 'A', 'C', 'A', 'D', 'A', 'C', 'A', 'D', 'C', 'B', 'B', 'D', 'A']
 correct_answers = ["A", "C", "A", "A", "D", "B", "C", "A", "C", "B", "A", "D", "C", "A", "D", "C", "B", "B", "D", "A"]
 try:

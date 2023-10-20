@@ -1,3 +1,12 @@
+# File: <Chapter 5 problem 7>
+# Description: <number of class tickets>
+# Assignment Name and Number: chapter 5 problem 7
+#
+# Name: <John Jack Elginer>
+# GitHub: <johnjack>
+#
+# On my honor, <Jack Elginer>, this programming assignment is my own work
+# and I have not provided this code to any other student.
 class_a_ticket_price = 20
 class_b_ticket_price = 15
 class_c_ticket_price = 10

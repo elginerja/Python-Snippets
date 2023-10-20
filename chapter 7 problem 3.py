@@ -1,3 +1,12 @@
+# File: <Chapter 7 problem 3>
+# Description: <rainfall>
+# Assignment Name and Number: chapter 7 problem 3
+#
+# Name: <John Jack Elginer>
+# GitHub: <johnjack>
+#
+# On my honor, <Jack Elginer>, this programming assignment is my own work
+# and I have not provided this code to any other student.
 rainfall_monthly = []
 for month in range(1, 13):
     while True:

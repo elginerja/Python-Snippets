@@ -1,3 +1,13 @@
+# File: <Chapter 4 problem 7>
+# Description: <number of pennies multiplied>
+# Assignment Name and Number: chapter 4 problem 7
+#
+# Name: <John Jack Elginer>
+# GitHub: <johnjack>
+#
+# On my honor, <Jack Elginer>, this programming assignment is my own work
+# and I have not provided this code to any other student.
+
 #I went back and changed this btw after chapter 7
 pennies = 0.01
 number_of_days = int(input("My guy, please enter the amount of days the pennies will double for: "))

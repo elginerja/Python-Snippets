@@ -1,3 +1,12 @@
+# File: <Chapter 5 problem 21>
+# Description: <rock paper scissors>
+# Assignment Name and Number: chapter 5 problem 21
+#
+# Name: <John Jack Elginer>
+# GitHub: <johnjack>
+#
+# On my honor, <Jack Elginer>, this programming assignment is my own work
+# and I have not provided this code to any other student.
 import random
 def get_computer_choice():
     choice = random.randint(1,3)
