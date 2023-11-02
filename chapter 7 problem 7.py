@@ -8,29 +8,44 @@
 # On my honor, <Jack Elginer>, this programming assignment is my own work
 # and I have not provided this code to any other student.
 # i know this doesn't work but I am trying it anyway
-student_answers = ['A', 'C', 'B', 'A', 'D', 'D', 'C', 'A', 'C', 'A', 'D', 'A', 'C', 'A', 'D', 'C', 'B', 'B', 'D', 'A']
-correct_answers = ["A", "C", "A", "A", "D", "B", "C", "A", "C", "B", "A", "D", "C", "A", "D", "C", "B", "B", "D", "A"]
-try:
-    with open('student_answers.txt', 'w') as file:
-        student_answers = file.write('student_answers.txt',)
-except FileNotFoundError:
-    print("Yo, that file you were looking for of 'student_answers.txt', it ain't there brotha. ")
-    exit(1)
-number_correct = 0
-number_incorrect = 0
-incorrect_questions = []
-for question_num, (correct, student) in enumerate(zip(int(correct_answers, student_answers)), 1):
-    if correct == student:
-        number_correct += 1
-    else:
-        number_incorrect += 1
-        incorrect_questions.append(question_num)
-in_order_to_pass = 15
-if number_correct >= in_order_to_pass:
-    result = '\n''CONGRATS!!!! GO GET YOUR VROOM VROOM. ' 
-else:
-    result = '\n''yeah bro today was not your day but come back soon alright? '
-print('Your result is: ', result)
-print('Your total questions right is: ', number_correct)
-print('Your total questions wrong is: ', number_incorrect)
-print('The questins you got wrong were:', incorrect_questions)
+print('\nIn this program, have the drivers test right next to you, you will type in the answers here.\nGood luck, you will need it. ')
+correct_answers = ['A', 'C', 'A', 'A', 'D', 'B', 'C', 'A', 'C', 'B','A', 'D', 'C', 'A', 'D', 'C', 'B', 'B', 'D', 'A']
+def main():
+   student_answers = []
+   for x in range(20):
+      problem = input('\nFor this question, please enter the letter of your choice from your multiple choice sheet: "A", "B", "C","D": ')
+      student_answers.append(problem)
+   outfile = open('student_answerslist.txt', 'w')
+
+   for item in student_answers:
+     outfile.write(item + '\n')
+    
+   outfile.close()
+main()
+def main():
+   print()
+   infile = open('student_answerslist.txt', 'r')
+   student_answers = infile.readlines()
+   infile.close()
+   index = 0
+   answers_correct = 0
+   answers_wrong = 0
+   while index < len(student_answers):
+      student_answers[index] = student_answers[index].rstrip('\n')
+      if student_answers[index] == correct_answers[index]:
+         answers_correct += 1
+      if student_answers[index] != correct_answers[index]:
+         answers_wrong += 1
+      index += 1
+
+   print('\nHere are your answers to the test my guy: ', student_answers)
+   if answers_correct < 15:
+      print("\nIm so sorry dude, you did not pass, because you got", answers_correct, "right and you got", answers_wrong, "wrong, and that is less than 15. ")
+   if answers_correct >= 15:
+      print("\nMy guy!!!!! you passed dude because you got", answers_correct, "right and you only have", answers_wrong, "wrong, and that is more than 15 correct. ")
+   if answers_correct == 20:
+      print('\nBRO. A PERFECT SCORE???? GOOD JOB DUDE!!!')
+   if answers_correct ==0:
+      print('\nDude, you didnt get any right. Go try again buckko. ')
+   print()
+main()

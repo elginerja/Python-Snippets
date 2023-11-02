@@ -31,9 +31,9 @@ while True:
         print("Yeah buddy you can't do that. Enter one of the three we said earlier. ")
         continue
     computer_choice = get_computer_choice()
-    print("The computer's choice is: ", computer_choice )
+    print("\nThe computer's choice is: ", computer_choice )
     result = determine_winner(user_choice, computer_choice)
     print(result)
-    play_again = input("Yo, wanna play again? (y/n): ")
+    play_again = input("\nYo, wanna play again? (y/n): ")
     if play_again != 'y':
         break

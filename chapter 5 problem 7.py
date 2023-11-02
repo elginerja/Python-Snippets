@@ -7,17 +7,17 @@
 #
 # On my honor, <Jack Elginer>, this programming assignment is my own work
 # and I have not provided this code to any other student.
-class_a_ticket_price = 20
-class_b_ticket_price = 15
-class_c_ticket_price = 10
-number_of_a_tickets = float(input('Please enter the amount of class A tickets sold: '))
-number_of_b_tickets = float(input('Please enter the amoun tof class B tickets sold: '))
-number_of_c_tickets = float(input('Please enter the amoun tof class C tickets sold: '))
-income_from_class_a = class_a_ticket_price * number_of_a_tickets
-income_from_class_b = class_b_ticket_price * number_of_b_tickets
-income_from_class_c = class_c_ticket_price * number_of_c_tickets
-total_income = income_from_class_a + income_from_class_b + income_from_class_c
-print('The income from class A tickets is', income_from_class_a, 'dollars. ')
-print('The income from class B tickets is', income_from_class_b, 'dollars. ')
-print('The income from class C tickets is', income_from_class_c, 'dollars. ')
-print('The total income from all of the tickets is', total_income, 'dollars. ')
+def total_income(class_a_seat, class_b_seat, class_c_seat):
+    a_ticket_income = class_a_seat * 20
+    b_ticket_income = class_b_seat * 15
+    c_ticket_income = class_c_seat * 10
+    total_income_from_all_seats_combined = a_ticket_income + b_ticket_income + c_ticket_income
+    return total_income_from_all_seats_combined
+def main():
+    number_of_class_a_tickets_sold = int(input('\nMy guy!!! Please enter the number of class a tickets sold: '))
+    number_of_class_b_tickets_sold = int(input('\nMy dude!!! Please enter the number of class b tickets sold: '))
+    number_of_class_c_tickets_sold = int(input('\nDawg!!! Please enter the number of class c tickets sold: '))
+    total = total_income(number_of_class_a_tickets_sold, number_of_class_b_tickets_sold, number_of_class_c_tickets_sold)
+    print('\nThe total income from all three seat kinds combined is: $ ',total, 'dollars. ')
+main()
+print(input('\nPress any key to exit the program: '))

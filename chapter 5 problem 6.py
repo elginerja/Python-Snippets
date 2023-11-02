@@ -7,9 +7,16 @@
 #
 # On my honor, <Jack Elginer>, this programming assignment is my own work
 # and I have not provided this code to any other student.
-fat_grams_per_day = float(input('please enter the number of fat grams consumed in a day: '))
-carbs_grams_per_day = float(input('please enter the number of carb grams consumed in a day: '))
-amount_of_calories_from_fat_grams = (fat_grams_per_day * 9)
-amount_of_calories_from_carb_grams = (carbs_grams_per_day * 4)
-print('The amount of calories from fat grams is:', amount_of_calories_from_fat_grams, 'calories. ')
-print('The amount of calories from carbs is', amount_of_calories_from_carb_grams, 'calories. ')
+def calories(fat_grams, carb_grams):
+    calaries_from_fat_grams = fat_grams * 9
+    calories_from_carb_grams = carb_grams * 4
+    total_calories = calaries_from_fat_grams + calories_from_carb_grams
+    return total_calories
+    
+def main():
+    fat_grams = float(input('\nDude!!! Please enter the amount of fat grams you consume a day: '))
+    carb_grams = float(input('\nDude!!! Please enter the amount of carb grams you consume a day: '))
+    total = calories(fat_grams, carb_grams)
+    print('\nThe total colaries from carbs and fat grams combined is:', total, 'calories. ')
+main()
+print(input('\nPress any key to exit the program: '))
